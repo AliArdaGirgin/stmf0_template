@@ -7,7 +7,7 @@ int main(){
 	RCC->AHBENR |= 1<<19;
 	GPIOC->MODER |= 1<<16;
 	GPIOC->MODER |= 1<<18;
-	long a = 400000;
+	long a = 200000;
 	while(1){
 		GPIOC->ODR &= ~(3<<8);
 		for(long i=0; i<a; i++);
